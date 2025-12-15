@@ -1,0 +1,18 @@
+<h1>Hello World !</h1>
+
+<p>This is my first webpage !!!</p>
+
+<p> Welcome {{first_name}}</p>
+
+<p> {{stuff|striptags}}</p>
+
+<p> {{favorite_pizza}}</p>
+
+<p> {% for pizza in favorite_pizza %}
+        {% if pizza == 41 %}
+            {{pizza + 10}}
+        {% else %}  
+            {{pizza}}</br>
+        {%endif%}
+    {%endfor%}
+</p>
